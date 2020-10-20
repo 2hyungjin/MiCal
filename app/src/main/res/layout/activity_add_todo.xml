@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/flag"
+    android:orientation="vertical"
+    tools:context=".AddTodo">
+
+    <DatePicker
+        android:outlineAmbientShadowColor="@color/flag"
+        android:outlineSpotShadowColor="@color/flag"
+        android:yearListSelectorColor="@color/flag"
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarTextColor="@color/colorList"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3500000" />
+
+    <EditText
+        android:id="@+id/edt_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:hint="What you gonna do?"
+        android:maxLines="1"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar" />
+
+    <Button
+        android:id="@+id/btn_add_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/colorList"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:text="add schedule"
+        app:layout_constraintTop_toBottomOf="@+id/edt_todo"
+        tools:layout_editor_absoluteX="10dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
